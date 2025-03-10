@@ -2,13 +2,13 @@
 #include<iostream>
 using namespace std;
 int main(){
-     int arr[]={1,2,-3,4,5};
-     int size=5;
+     int arr[]={1, 2, -3, 4, 5};
+     int size = 5;
      int currSum = 0;
-     int maxSum=INT16_MIN;
-     for(int i = 0;i<size;i++){
+     int maxSum = INT16_MIN;
+     for(int i = 0; i < size;  i++){
         currSum += arr[i];
-        maxSum=max(currSum,maxSum);//Update maxSum with the larger value
+        maxSum=max(currSum, maxSum);//Update maxSum with the larger value
         if(currSum < 0){
          currSum = 0;
         }
